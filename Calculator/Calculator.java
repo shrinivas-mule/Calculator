@@ -13,6 +13,7 @@ class Main {
 
     // ask users to enter operator
    // System.out.println("Choose an operator: +, -, *, or /");
+   System.out.println("Choose an operator: +, -, *,/,%");
 
     operator = input.next().charAt(0);
 
@@ -50,6 +51,14 @@ class Main {
         result = number1 / number2;
         System.out.println(number1 + " / " + number2 + " = " + result);
         break;
+     
+      case '%':
+        System.out.println("enter per value");
+       Double per=input.nextDouble();
+        result = (number1*per)/100;
+        System.out.println(number1 + " / " + number2 + " = " + result);
+        break;
+
       
    
 
